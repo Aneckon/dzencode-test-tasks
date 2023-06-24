@@ -5,7 +5,7 @@ import styles from '@/styles/components/ModalDelete.module.scss';
 
 interface ModalDeleteProps {
   title: string;
-  content: { id: number; photo: string; title: string; type: string }[];
+  content: { id: number; photo?: string; title?: string; type?: string }[];
   open: boolean;
   setOpen: (open: boolean) => void;
   setModalDelete: (open: string) => void;

@@ -14,9 +14,9 @@ interface PanelOrderProps {
   activePanel: boolean | undefined;
   products: {
     id: number;
-    photo: string;
+    photo?: string;
     title: string;
-    type: string;
+    type?: string;
   }[];
   setOrdersPanel: (id: any) => void;
 }
@@ -38,9 +38,9 @@ export const PanelOrder: FC<PanelOrderProps> = ({
   const [modalContent, setModalContent] = React.useState<
     {
       id: number;
-      photo: string;
-      title: string;
-      type: string;
+      photo?: string;
+      title?: string;
+      type?: string;
     }[]
   >([]);
 
