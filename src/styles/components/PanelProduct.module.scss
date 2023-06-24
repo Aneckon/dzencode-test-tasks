@@ -1,0 +1,45 @@
+.panelProduct {
+  max-width: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+
+  margin-bottom: 20px;
+
+  padding: 10px 40px;
+
+  &__active {
+    .serialNumber {
+      display: none;
+    }
+    .date {
+      display: none;
+    }
+    .specification {
+      display: none;
+    }
+    .order {
+      display: none;
+    }
+  }
+}
+
+.price {
+  div {
+    display: flex;
+    align-items: center;
+    p {
+      padding-right: 5px;
+
+      color: #000;
+    }
+  }
+}
+
+.delete{
+  cursor: pointer;
+}
