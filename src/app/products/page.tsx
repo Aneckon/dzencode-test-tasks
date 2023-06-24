@@ -4,14 +4,12 @@ import { PageHead } from '@/components/pageHead';
 import { PanelProduct } from '@/components/panelProduct';
 import { orders } from '@/components/utils';
 
-import styles from '@/styles/page/page.module.scss';
-
 export default function Products() {
   const [ordersPanel, setOrdersPanel] = React.useState(orders[0].products);
   const [typeSearch, setTypeSearch] = React.useState('');
 
   return (
-    <section className={`${styles.main} main`}>
+    <section className="main">
       <PageHead
         typeSearch={typeSearch}
         setTypeSearch={setTypeSearch}
